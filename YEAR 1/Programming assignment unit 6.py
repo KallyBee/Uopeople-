@@ -1,4 +1,5 @@
-Part 1
+Part A
+
 # Define a list of TICT staff members
 tict_staff = ["Caleb", "Theo", "Panda", "Dominic", "Peace", "Moses", "Divine", "Maxwell", "Emma", "Precious"]
 
@@ -38,14 +39,26 @@ print(top3salaries)
 
 
 
-Explanation:
-1. **tict_staff**: List of TICT staff members.
-2. **subList1** and **subList2**: Split the staff list into two sublists.
-3. **subList2.append("Kriti Brown")**: Add a new staff member to the second sublist.
-4. **subList1.pop(1)**: Remove the second staff member from the first sublist.
-5. **merged_list**: Combine the modified sublists into a new list.
-6. **salary_list**: List of salaries corresponding to the staff members.
-7. **updated_salary_list**: Calculate updated salaries with a 4% increase.
-8. **top3salaries**: Sort the updated salary list in descending order and select the top 3.
-9. **print(updated_salary_list)**: Display the updated salary list.
-10. **print(top3salaries)**: Display the top 3 salaries.
+Part B
+
+
+
+def sentence_to_wordlist(sentence):
+
+    word_list = sentence.split()
+
+    reversed_word_list = list(reversed(word_list))
+
+    return reversed_word_list
+
+
+
+# Example usage:
+
+input_sentence = input(“Enter a sentence: “)
+
+output_word_list = sentence_to_wordlist(input_sentence)
+
+print(“Reversed Word List:”, output_word_list)
+
+ 
